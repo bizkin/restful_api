@@ -1,7 +1,5 @@
-# UP&GO NodeJs backend
+# Restful API practice
 
-## Info:
+## node.js server with react.
 
-### node.js server, restful api with admin and user
-
-#### connect this backend to your favorite\needed front framework
+### restful api with admin and user
