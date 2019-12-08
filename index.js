@@ -41,6 +41,16 @@ app.get("/", (req, res) =>
     desc: "showing some restful api sugaaa"
   })
 );
+
+app.get(
+  "/callback",
+  (req, res, next) => {
+    console.log("im loaded before the render");
+    next();
+  },
+  (req, res) => res.send("hello, before me was a console log")
+);
+
 app.use(express.json());
 
 app.listen(PORT, () => console.log(`server is on port ${PORT} `));
